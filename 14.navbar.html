@@ -8,10 +8,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         .col {
             height: 100px;
             outline: 1px solid red;
+        }
+
+        .link-underline {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -22,14 +31,20 @@
             <div class="row">
                 <div class="col">
                     <ul class="list-unstyled d-flex">
-                        <li><a href="#">link1</a></li>
-                        <li><a href="#">link2</a></li>
-                        <li><a href="#">link3</a></li>
-                        <li><a href="#">link4</a></li>
+                        <li class="mx-2"><a class="page-links text-dark " href="#">link1</a></li>
+                        <li class="mx-2"><a class="page-links text-dark " href="#">link2</a></li>
+                        <li class="mx-2"><a class="page-links text-dark link-underline" href="#">link3</a></li>
+                        <li class="mx-2"><a class="page-links text-dark " href="#">link4</a></li>
                     </ul>
                 </div>
-                <div class="col"></div>
-                <div class="col"></div>
+                <div class="col d-flex justify-content-center">
+                    <h1 class="h4">Alameda</h1>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <i class="mx-2 fa-brands fa-instagram"></i>
+                    <i class="mx-2 fa-brands fa-twitter"></i>
+                    <i class="mx-2 fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -43,6 +58,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+
+    <script>
+        // 選取全部的 .page-links
+        const pageLinks = document.querySelectorAll('.page-links');
+
+        // 針對全部的 pageLinks 跑回圈
+        pageLinks.forEach(element => {
+            // 每個一個 LINK 都加上事件監聽器
+            element.addEventListener('click', function (e) {
+                // 測試監聽器是否正常運作
+                // e.preventDefault();
+                // console.log('hi');
+
+                // 全部的 a 連結，都去掉底線
+                pageLinks.forEach(element => {
+                    element.classList.remove('link-underline');
+                });
+
+                // 被點擊的那個人，要加上底線
+                this.classList.add('link-underline');
+            });
+        })
+
+    </script>
 </body>
 
 </html>
