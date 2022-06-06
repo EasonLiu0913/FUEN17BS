@@ -15,12 +15,16 @@
 
     <style>
         .col {
-            height: 100px;
+            /* min-height: 50px; */
             outline: 1px solid red;
         }
 
         .link-underline {
             text-decoration: underline;
+        }
+
+        .border-right-2 {
+            border-right: 2px solid #ccc;
         }
     </style>
 </head>
@@ -28,26 +32,44 @@
 <body>
     <nav>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul class="list-unstyled d-flex">
+            <div class="row mb-5">
+                <div class="col py-3">
+                    <ul class="list-unstyled d-flex align-items-center h-100 mb-0">
                         <li class="mx-2"><a class="page-links text-dark " href="#">link1</a></li>
                         <li class="mx-2"><a class="page-links text-dark " href="#">link2</a></li>
                         <li class="mx-2"><a class="page-links text-dark link-underline" href="#">link3</a></li>
                         <li class="mx-2"><a class="page-links text-dark " href="#">link4</a></li>
                     </ul>
                 </div>
-                <div class="col d-flex justify-content-center">
-                    <h1 class="h4">Alameda</h1>
+                <div class="col d-flex justify-content-center align-items-center py-3">
+                    <h1 class="h4 m-0">Alameda</h1>
                 </div>
-                <div class="col d-flex justify-content-end">
-                    <i class="mx-2 fa-brands fa-instagram"></i>
-                    <i class="mx-2 fa-brands fa-twitter"></i>
-                    <i class="mx-2 fa-solid fa-cart-shopping"></i>
+                <div class="col d-flex justify-content-end align-items-center py-3">
+                    <div><i class="mx-2 fa-brands fa-instagram"></i></div>
+                    <div><i class="mx-2 fa-brands fa-twitter"></i></div>
+                    <div><i class="mx-2 fa-solid fa-cart-shopping"></i></div>
                 </div>
             </div>
+
+            <div class="row justify-content-center">
+                <ul class="list-unstyled d-flex">
+                    <li class="px-3 border-right-2"><a class="text-dark" href="#">Top</a></li>
+                    <li class="px-3 border-right-2"><a class="text-dark" href="#">Bottoms</a></li>
+                    <li class="px-3"><a class="text-dark" href="#">Sale</a></li>
+                </ul>
+            </div>
         </div>
+
+
     </nav>
+
+    <main>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
