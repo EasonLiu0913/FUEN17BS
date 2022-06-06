@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .wrap {
+            background: #aaa;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* height: 200px; */
+        }
+
+        .box {
+            width: 33.333333%;
+            padding-left: 10px;
+            padding-right: 10px;
+            /* min-height: 100px; */
+            /* outline: 1px solid red; */
+        }
+
+        .img-wrap img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">
+            <div class="img-wrap">
+                <img src="https://cdn.pixabay.com/photo/2022/05/12/20/59/tulips-7192345_960_720.jpg" alt="">
+            </div>
+
+            <h3>Flower1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima sed fugiat nulla ipsa pariatur molestias
+                dolores quidem earum iste eos. Beatae quo quisquam deserunt neque accusantium sunt maxime iste eius.</p>
+        </div>
+        <div class="box">
+            <div class="img-wrap">
+                <img src="https://cdn.pixabay.com/photo/2022/03/30/14/01/rose-7101236_960_720.jpg" alt="">
+            </div>
+
+            <h3>Flower2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima sed fugiat nulla ipsa pariatur molestias
+                dolores quidem earum iste eos. Beatae quo quisquam deserunt neque accusantium sunt maxime iste eius.</p>
+        </div>
+        <div class="box">
+            <div class="img-wrap">
+                <img src="https://cdn.pixabay.com/photo/2022/04/22/04/27/tulips-7148773_960_720.jpg" alt="">
+            </div>
+
+            <h3>Flower3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima sed fugiat nulla ipsa pariatur molestias
+                dolores quidem earum iste eos. Beatae quo quisquam deserunt neque accusantium sunt maxime iste eius.</p>
+        </div>
+    </div>
+</body>
+
+</html>
