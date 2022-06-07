@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav btn</title>
+    <style>
+        .menu {
+            height: 0px;
+            overflow: hidden;
+            transition: .5s;
+            background-color: cadetblue;
+        }
+
+        .menu.show {
+            height: 106px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Button</button>
+    <div class="menu">
+        <ul>
+            <li><a href="#">link1</a></li>
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+            <li><a href="#">link4</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const btn = document.querySelector('button');
+        const menu = document.querySelector('.menu');
+
+        btn.addEventListener('click', function () {
+            console.log('hi', menu.style.height);
+
+            // 方法一 使用 inline-style
+            // if (menu.style.height === '0px') {
+            //     menu.style.height = '106px';
+            // }
+            // else {
+            //     menu.style.height = '0px';
+            // }
+
+            // 方法二 add class 的方法
+            menu.classList.toggle('show');
+        })
+    </script>
+</body>
+
+</html>
