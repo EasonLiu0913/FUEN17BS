@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        * {
+            /* 預設 */
+            /* box-sizing: content-box; */
+
+            /* Bootstrap 或是手刻都會改成這個計算方式 */
+            box-sizing: border-box;
+
+            /* CSS Reset */
+            margin: 0;
+            padding: 0;
+        }
+
+        .col {
+            width: 33.33333%;
+            height: 300px;
+            background-color: #faf;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 5px solid #000;
+            font-size: 2rem;
+            color: aqua;
+            float: left;
+        }
+
+        .box-inside {
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col">
+        <div class="box-inside">1</div>
+    </div>
+    <div class="col">
+        <div class="box-inside">2</div>
+    </div>
+    <div class="col">
+        <div class="box-inside">3</div>
+    </div>
+</body>
+
+</html>
