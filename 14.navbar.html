@@ -88,7 +88,7 @@
         // 針對全部的 pageLinks 跑回圈
         pageLinks.forEach(element => {
             // 每個一個 LINK 都加上事件監聽器
-            element.addEventListener('click', function (e) {
+            element.addEventListener('click', (e) => {
                 // 測試監聽器是否正常運作
                 // e.preventDefault();
                 // console.log('hi');
@@ -99,7 +99,7 @@
                 });
 
                 // 被點擊的那個人，要加上底線
-                this.classList.add('link-underline');
+                e.currentTarget.classList.add('link-underline');
             });
         })
 
