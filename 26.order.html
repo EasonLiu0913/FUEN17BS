@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        .wrap {
+            width: 800px;
+            height: 500px;
+            background-color: #ccc;
+            display: flex;
+        }
+
+        .left {
+            width: 60%;
+            height: 100%;
+            background-color: #aff;
+        }
+
+        .right {
+            width: 40%;
+            height: 100%;
+            background-color: #faa;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .wrap2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            outline: 1px solid red;
+        }
+
+        .box2 {
+            order: 1;
+        }
+
+        .box7 {
+            order: 2;
+        }
+
+        .box6 {
+            order: -1;
+        }
+
+        .box8 {
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="wrap">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+
+    <div class="wrap">
+        <div class="left order-2">left</div>
+        <div class="right order-1">right</div>
+    </div> -->
+
+    <div class="wrap2">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+        <div class="box box5">box5</div>
+        <div class="box box6">box6</div>
+        <div class="box box7">box7</div>
+        <div class="box box8">box8</div>
+        <div class="box box9">box9</div>
+        <div class="box box10">box10</div>
+        <div class="box box11">box11</div>
+        <div class="box box12">box12</div>
+    </div>
+</body>
+
+</html>
