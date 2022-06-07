@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d-none</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        nav.desktop {
+            background-color: #afa;
+            height: 20vh;
+        }
+
+        nav.mobile {
+            background-color: #aaf;
+            height: 10vh;
+        }
+
+        .wrap {
+            background-color: rgb(6, 101, 183);
+            height: 80vh;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="desktop d-none d-md-block">
+        <!-- 手機 display:none; -->
+        <!-- 桌機 display:block; -->
+        desktop
+
+    </nav>
+    <nav class="mobile d-block d-md-none">
+        <!-- 手機 display:block; -->
+        <!-- 桌機 display:none; -->
+        Mobile
+
+    </nav>
+
+    <div class="wrap">
+        <H1>Hello</H1>
+    </div>
+</body>
+
+</html>
